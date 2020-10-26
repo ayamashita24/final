@@ -4,16 +4,16 @@ var config = {
     showMarkers: false,
     theme: 'light',
     alignment: 'left',
-    title: 'Homeschooling during COVID-19',
+    title: 'Access to education during COVID-19',
     subtitle: 'Vulnerability and education of children during COVID-19',
-    byline: 'By Chad, Ayaka and Naroa',
+    byline: 'Naroa Coretti',
     //footer: 'Source: source citations, etc.',
     chapters: [
         {
             id: 'preview',
             title: 'NYC',
             //image: './path/to/image/source.png',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            description: 'The COVID pandemic has further increased some social inequalities due to the different levels of vulnerability found in different sectors of society. One of these inequalities is access to education. We would like to explore the possible relationship of race and income level on the access to education of children, which under the pandemic is directly related to the access to internet. Lets explore together the access to internet of different areas in NY. ',
             location: {
               center: { lon: -74.09232, lat: 40.73593 },
               zoom: 10.44,
@@ -44,9 +44,9 @@ var config = {
         },
         {
             id: 'internet_access_manhattan',
-            title: 'Intertet Access',
+            title: 'Manhattan',
             //image: './path/to/image/source.png',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            description: 'Here we can see the maxium available broadband speeds for all the census blocks. Manttan in general has high maximum speeds. This does not mean that all the homes in that block do indeed have access to internet, but if they do, the speed will be equal or lower than the maximum.',
             location: {
               center: { lon: -74.00038, lat: 40.77675 },
               zoom: 12.91,
@@ -73,9 +73,9 @@ var config = {
         },
         {
             id: 'internet_access_brooklyn',
-            title: 'Intertet Access',
+            title: 'Brooklyn',
             //image: './path/to/image/source.png',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            description: 'In Brooklyn instead, we can see that there are several blocks with a much lower maximum speed.',
             location: {
               center: { lon: -73.99589, lat: 40.67057 },
               zoom: 12.24,
@@ -97,9 +97,9 @@ var config = {
         },
         {
             id: 'internet_access_bronx',
-            title: 'Intertet Access',
+            title: 'The Bronx',
             //image: './path/to/image/source.png',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            description: 'And the same happens in The Bronx. Both Brooklyn and The Bronx have higher percentages of BIPOC people than Manhattan.',
             location: {
               center: { lon: -73.95390, lat: 40.82081 },
               zoom: 12.24,
@@ -130,9 +130,9 @@ var config = {
         },
         {
             id: 'wifi-manthattan',
-            title: 'Wifi',
+            title: 'Wifi in Manhattan',
             //image: './path/to/image/source.png',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            description: 'In a similar way, if we look at the free Wifi hotspots, the density is very high in Manhattan.',
             location: {
               center: { lon: -73.96962, lat: 40.78139 },
               zoom: 12.24,
@@ -155,9 +155,9 @@ var config = {
         },
         {
             id: 'wifi-brooklyn',
-            title: 'Wifi',
+            //title: 'Wifi',
             //image: './path/to/image/source.png',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            description: 'While there are much less hotspots, for example, in Brooklyn.' ,
             location: {
               center: { lon: -73.94924, lat: 40.63436 },
               zoom: 12.24,
@@ -181,7 +181,7 @@ var config = {
             id: 'preview-wifi',
             title: 'End',
             //image: './path/to/image/source.png',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            description: 'This is the first iteration for a larger project. Stay tuned. Data source NYC Open Data. Broadband speed: https://data.cityofnewyork.us/dataset/Internet-Master-Plan-Broadband-Choice-and-Speed-by/8ess-ssnw Wifi hotspots: https://data.cityofnewyork.us/City-Government/NYC-Wi-Fi-Hotspot-Locations/yjub-udmw  ',
             location: {
               center: { lon: -74.09232, lat: 40.73593 },
               zoom: 10.44,
