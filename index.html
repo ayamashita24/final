@@ -8,6 +8,9 @@
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
     <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
     <script src="https://unpkg.com/scrollama"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+
     <style>
         body {
             margin:0;
@@ -17,6 +20,29 @@
         a, a:hover, a:visited {
             color: #0071bc;
         }
+
+      /* Add CSS classes for tooltip and tooltip.hidden */
+        #tooltip.hidden {
+             display: none;
+           }
+
+        #tooltip {
+             position: absolute;
+             width: 220px;
+             height: 45px;
+             padding: 5px;
+             font: 15px sans-serif;
+             background-color: white;
+             border: solid gray 1px;
+             border-radius: 5px;
+             z-index:10;
+             opacity: 0.8;
+           }
+/* #main {
+          background-color: white;
+          background-size: contain;
+        }*/
+
         #map {
             top:0;
             height: 100vh;
@@ -195,6 +221,7 @@ config.chapters.forEach((record, idx) => {
     features.appendChild(container);
 });
 
+
 story.appendChild(features);
 
 var footer = document.createElement('div');
@@ -270,6 +297,219 @@ map.on("load", function() {
 
 // setup resize event
 window.addEventListener('resize', scroller.resize);
+
+</script>
+
+
+
+<!-- Add a div element for tooltip -->
+<div id="tooltip" class="hidden">
+    <p><span id="value">100</span></p>
+</div>
+
+
+<!-- Add buttons for each of the four neighborhoods -->
+<button id="roslindale">Roslindale</button>
+<button id="waterfront">Waterfront</button>
+<button id="back_bay">Back Bay</button>
+<button id="jamaica_plain">Jamaica Plain</button>
+
+<div id="main">
+
+</div>
+
+
+
+<script type="text/javascript">
+
+	var bos311 = "https://gist.githubusercontent.com/cesandoval/046a91586ae76889aeb5b3e9db53016e/raw/ffb0c410ce8503c8c839cde01235bafb39cb14ad/bostosn_311.csv"
+
+	var roslindale = [["Citizens_Connect_App", 2312], ["City_Worker_App", 559], ["Constituent_Call", 3432], ["Employee_Generated", 396], ["twitter", 13], ["Self_Service", 611]]
+	var south_boston_waterfront = [["Citizens_Connect_App", 622], ["City_Worker_App", 21], ["Constituent_Call", 287], ["Employee_Generated", 23], ["twitter", 4], ["Self_Service", 21]]
+	var back_bay = [["Citizens_Connect_App", 4553], ["City_Worker_App", 579], ["Constituent_Call", 2255], ["Employee_Generated", 405], ["twitter", 13], ["Self_Service", 240]]
+	var jamaica_plain = [["Citizens_Connect_App", 5008], ["City_Worker_App", 683], ["Constituent_Call", 5522], ["Employee_Generated", 427], ["twitter", 16], ["Self_Service", 909]]
+
+  var Boston_Topo_url = 'https://gist.githubusercontent.com/cesandoval/09b2e39263c748fbcb84b927cecc7c46/raw/ab71d3638efd2545ec99c2651c6f2ddcea9d2a07/boston.json'
+
+	// Define height and width variables (height of 720, width of 1200)
+  var width = 1200,
+      height = 700;
+
+	// Add an SVG element
+  var svg = d3.select("body").append("svg")
+              .attr("width", width)
+              .attr("height", height);
+    svg.append("rect")
+        .attr("width", "100%")
+        .attr("height", "100%")
+        .attr("fill", "white");
+
+	// Bind data to rectangles to create the bar chart. Add mouseovers for the hovers.
+    function update(data){
+
+
+      var update= svg.selectAll(".bar")
+               .data(data)
+      update
+               .enter()
+               .append("rect")
+               .attr('class','bar')
+               .merge(update) // get the already existing elements as well
+               .transition() // and apply changes to all of them
+               .duration(1000)
+                     .attr("x", function(d, i) {
+                             return i*50 + 50 ;
+                        })
+                     .attr("y", function(d) {
+                             return 500 - d[1]*0.08;
+                        })
+                     .attr("height", function(d) {
+                             return d[1]*0.08;
+                        })
+                     .attr("width", 30)
+
+      update
+              .exit()
+              .remove()
+      svg.selectAll(".bar")
+            .attr("fill", "#3caea3")
+            .on("mouseover", function(d) {
+                   d3.select("#tooltip")
+                       .style("left", d3.event.pageX + "px")
+                       .style("top", d3.event.pageY + "px")
+                       .select("#value")
+                       .html("<p>" + String(d[0]) + ": " + String(d[1])+ "</p>")
+                   d3.select("#tooltip").classed("hidden", false);
+            })
+           .on("mouseout", function() {
+                  d3.select("#tooltip").classed("hidden", true);})
+    }
+
+    update(roslindale)
+    update_selected(roslindale)
+
+
+
+     // Create y-axis
+     svg.append("line")
+     	.attr("x1", 50)
+     	.attr("y1", 75)
+     	.attr("x2", 50)
+     	.attr("y2", 500)
+     	.attr("stroke-width", 2)
+     	.attr("stroke", "black");
+
+     // Create x-axis
+     svg.append("line")
+     	.attr("x1", 50 )
+     	.attr("y1", 500)
+     	.attr("x2", 50 + 300)
+     	.attr("y2", 500)
+     	.attr("stroke-width", 2)
+     	.attr("stroke", "black");
+
+       // Add a Label
+       // y-axis label
+       svg.append("text")
+         	.attr("class", "y label")
+         	.attr("text-anchor", "end")
+         	.text("No. of 311 requests")
+         	.attr("transform", "translate(30, 250) rotate(-90)");
+
+      svg.selectAll(".text")
+          .data(roslindale)
+          .enter()
+          .append("text")
+          .attr("class","label")
+          .attr("x", function(d, i) {return i*50 + 50 })
+          .attr("y", function(d) { return 500; })
+          .text(function(d) {return d[0].replaceAll("_", " ");})
+          .attr("transform", function(d, i) {
+                 return "translate(" + (-width/2+ 50*3+5)+ ", 530)" +
+                        "rotate(-90 "+ ((i + 0.5) * 50) + " " + (12) +")";
+          } )
+          .style("text-anchor", "end");
+
+
+
+	// Add a map of Boston next to the bar chart and set the fill color to "gray"
+
+    //Projection
+    var albersProjection = d3.geoAlbers()
+                             .scale(180000)
+                             .rotate([71.057, 0])
+                             .center([0, 42.313])
+                             .translate([width/2+80, height/2-50])
+    var geoPath = d3.geoPath()
+                   .projection(albersProjection)
+
+    //Promises
+     var promises = [ d3.json(Boston_Topo_url)]
+
+     Promise.all(promises).then(ready)
+
+     //Waiting until it is loaded and drawing the map
+     function ready([bos]) {
+             svg.append("g")
+                 .attr("class", "neigh")
+                 .selectAll("path")
+                 .data(topojson.feature(bos, bos.objects.boston_neigh).features)
+                 .enter()
+                 .append("path")
+                 .style("fill",function(d){ return(fill_color= getColor(d.properties.Name))})
+                 .style("stroke-width", 0.7)
+                 .attr("d", geoPath);
+    }
+
+    //Updating the selected area, called wben a button is pressed
+
+    var selected = "Roslindale"
+
+    function update_selected(selected_neigh){
+        selected = selected_neigh;
+    }
+
+    //Defining color of neighborhoods depending on if they are selected or not
+    function getColor(neighborhood){
+          if (neighborhood == selected){
+            return "#3caea3";
+          }else{
+            return "grey";
+          }
+    }
+
+    //Function to update the colors of the map, triggered by the buttons
+    function updateMap(){
+      d3.selectAll("path")
+          .transition()
+          .delay(1000)
+          .style("fill",function(d){
+            return(fill_color= getColor(d.properties.Name))
+          });
+    }
+
+
+	// Change the data when a user selects the various buttons, so the bar chart adjusts accordingly. Also when the user selects a neighborhood the fill color in that neighborhood should change. Make sure to implement transitions.
+    d3.select("#roslindale").on("click", function() {
+      update(roslindale);
+      update_selected("Roslindale");
+      updateMap();
+    });
+    d3.select("#waterfront").on("click", function() {
+      update(south_boston_waterfront);
+      update_selected("South Boston Waterfront");
+      updateMap();
+    });
+    d3.select("#back_bay").on("click", function() {
+      update(back_bay);
+      update_selected("Back Bay");
+      updateMap();
+    });
+    d3.select("#jamaica_plain").on("click", function() {
+      update(jamaica_plain);
+      update_selected("Jamaica Plain");
+      updateMap();
+    });
 
 </script>
 
