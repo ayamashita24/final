@@ -1,13 +1,13 @@
 var config = {
-    style: 'mapbox://styles/naroacs/ckgjvqjmu0qsh19se2difw4ks',
-    accessToken: 'pk.eyJ1IjoibmFyb2FjcyIsImEiOiJja2dmdWpxYWswczZuMnhtaTd6d3Z4cG52In0.B3Ia8g3cPWCwjXR8j6gy8Q',
+    style: 'mapbox://styles/mapbox/light-v10',
+    accessToken: 'pk.eyJ1IjoiYXlhbWFzaGl0YTI0IiwiYSI6ImNraTNucjd5bTF2bGEzM28yOW8wN2hlcnIifQ.zkkuVYV-XG6cudnqNKC_og',
     showMarkers: false,
     theme: 'light',
     alignment: 'left',
-    title: 'Access to education during COVID-19',
-    subtitle: 'Vulnerability and education of children during COVID-19',
-    byline: 'Naroa Coretti',
-    //footer: 'Source: source citations, etc.',
+    title: 'The COVID Pandemic through the lens of vulnerable youth',
+    subtitle: 'Final Project for 11.154/11.454 Big Data, Visualization, and Society',
+    byline: 'By Naroa Coretti Sanchez, Ayaka Yamashita, Hyun-Chae Chad Loh',
+    footer: 'Source: NYC OpenData, CDC/ATSDR, US Census',
     chapters: [
         {
             id: 'preview',
