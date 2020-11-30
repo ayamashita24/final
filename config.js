@@ -70,20 +70,40 @@ var config = {
             },
             onChapterEnter: [
                  {
-                     layer: 'new-87f2lz',
+                     layer: 'eat',
                      opacity: 0.4
+                 },
+                 {
+                     layer: 'play',
+                     opacity: 0
+                 },
+                {
+                     layer: 'learn',
+                     opacity: 0
+                 },
+                {
+                     layer: 'svi',
+                     opacity: 0
                  }
             ],
             onChapterExit: [
 
-              {
-                  layer: 'nyc-wi-fi-hotspot-locations',
-                  opacity: 0
-              },
-              {
-                  layer: 'new-87f2lz',
-                  opacity: 0.4
-              }
+               {
+                     layer: 'eat',
+                     opacity: 0.4
+                 },
+                 {
+                     layer: 'play',
+                     opacity: 0
+                 },
+                {
+                     layer: 'learn',
+                     opacity: 0
+                 },
+                {
+                     layer: 'svi',
+                     opacity: 0
+                 }
             ]
         },
         {
@@ -99,15 +119,40 @@ var config = {
             },
             onChapterEnter: [
                  {
-                     layer: 'new-87f2lz',
+                     layer: 'eat',
+                     opacity: 0
+                 },
+                 {
+                     layer: 'play',
                      opacity: 0.4
+                 },
+                {
+                     layer: 'learn',
+                     opacity: 0
+                 },
+                {
+                     layer: 'svi',
+                     opacity: 0
                  }
             ],
             onChapterExit: [
-              {
-                  layer: 'new-87f2lz',
-                  opacity: 0.4
-              }
+
+               {
+                     layer: 'eat',
+                     opacity: 0
+                 },
+                 {
+                     layer: 'play',
+                     opacity: 0.4
+                 },
+                {
+                     layer: 'learn',
+                     opacity: 0
+                 },
+                {
+                     layer: 'svi',
+                     opacity: 0
+                 }
             ]
         },
         {
@@ -123,24 +168,40 @@ var config = {
             },
             onChapterEnter: [
                  {
-                     layer: 'nyc-wi-fi-hotspot-locations',
+                     layer: 'eat',
                      opacity: 0
                  },
                  {
-                     layer: 'new-87f2lz',
+                     layer: 'play',
+                     opacity: 0
+                 },
+                {
+                     layer: 'learn',
                      opacity: 0.4
+                 },
+                {
+                     layer: 'svi',
+                     opacity: 0
                  }
             ],
             onChapterExit: [
 
-              {
-                  layer: 'nyc-wi-fi-hotspot-locations',
-                  opacity: 0
-              },
-              {
-                  layer: 'new-87f2lz',
-                  opacity: 0
-              }
+               {
+                     layer: 'eat',
+                     opacity: 0
+                 },
+                 {
+                     layer: 'play',
+                     opacity: 0
+                 },
+                {
+                     layer: 'learn',
+                     opacity: 0.4
+                 },
+                {
+                     layer: 'svi',
+                     opacity: 0
+                 }
             ]
         },
         {
@@ -154,24 +215,48 @@ var config = {
               pitch: 0,
               bearing: 0
             },
-            onChapterEnter: [
+          onChapterEnter: [
                  {
-                     layer: 'nyc-wi-fi-hotspot-locations',
-                     opacity: 1
+                     layer: 'eat',
+                     opacity: 0
+                 },
+                 {
+                     layer: 'play',
+                     opacity: 0
+                 },
+                {
+                     layer: 'learn',
+                     opacity: 0
+                 },
+                {
+                     layer: 'svi',
+                     opacity: 0
                  }
             ],
             onChapterExit: [
 
-              {
-                  layer: 'nyc-wi-fi-hotspot-locations',
-                  opacity: 1
-              }
+               {
+                     layer: 'eat',
+                     opacity: 0
+                 },
+                 {
+                     layer: 'play',
+                     opacity: 0
+                 },
+                {
+                     layer: 'learn',
+                     opacity: 0
+                 },
+                {
+                     layer: 'svi',
+                     opacity: 0
+                 }
             ]
         },
         
         {
-            id: 'preview-wifi',
-            title: 'End',
+            id: 'transition',
+            title: 'Comparison',
             //image: './path/to/image/source.png',
             description: ' ',
             location: {
@@ -180,18 +265,42 @@ var config = {
               pitch: 0.00,
               bearing: 0.00
             },
-            onChapterEnter: [
+    onChapterEnter: [
                  {
-                     layer: 'nyc-wi-fi-hotspot-locations',
-                     opacity: 1
+                     layer: 'eat',
+                     opacity: 0
+                 },
+                 {
+                     layer: 'play',
+                     opacity: 0
+                 },
+                {
+                     layer: 'learn',
+                     opacity: 0
+                 },
+                {
+                     layer: 'svi',
+                     opacity: 0
                  }
             ],
             onChapterExit: [
 
-              {
-                  layer: 'nyc-wi-fi-hotspot-locations',
-                  opacity: 0
-              }
+               {
+                     layer: 'eat',
+                     opacity: 0
+                 },
+                 {
+                     layer: 'play',
+                     opacity: 0
+                 },
+                {
+                     layer: 'learn',
+                     opacity: 0
+                 },
+                {
+                     layer: 'svi',
+                     opacity: 0
+                 }
             ]
         },
     ]
