@@ -72,7 +72,7 @@ var config = {
         {
             id: 'park_access',
             title: 'Openspace Access',
-            description: 'Let's check how NYC has been prepared for openspace access via park access.',
+            description: 'Let us check how NYC has been prepared for openspace access via park access.',
             location: {
               center: { lon: -73.99589, lat: 40.67057 },
               zoom: 12.24,
@@ -82,20 +82,20 @@ var config = {
             onChapterEnter: [
                  {
                      layer: 'new-87f2lz',
-                     opacity: 1
+                     opacity: 0.4
                  }
             ],
             onChapterExit: [
               {
                   layer: 'new-87f2lz',
-                  opacity: 1
+                  opacity: 0.4
               }
             ]
         },
         {
             id: 'internet_access',
             title: 'Internet Access',
-            description: 'And the same happens in The Bronx. Both Brooklyn and The Bronx have higher percentages of BIPOC people than Manhattan.',
+            description: '',
             location: {
               center: { lon: -73.95390, lat: 40.82081 },
               zoom: 12.24,
@@ -127,8 +127,7 @@ var config = {
         {
             id: 'svi',
             title: 'Social Vulnerability Index',
-            //image: './path/to/image/source.png',
-            description: 'In a similar way, if we look at the free Wifi hotspots, the density is very high in Manhattan.',
+            description: '',
             location: {
               center: { lon: -73.96962, lat: 40.78139 },
               zoom: 12.24,
@@ -149,7 +148,54 @@ var config = {
               }
             ]
         },
-        
-            
+        {
+                    id: 'wifi-brooklyn',
+                    //title: 'Wifi',
+                    //image: './path/to/image/source.png',
+                    description: 'While there are much less hotspots, for example, in Brooklyn.' ,
+                    location: {
+                      center: { lon: -73.94924, lat: 40.63436 },
+                      zoom: 12.24,
+                      pitch: 53.00,
+                      bearing: 8.00
+                    },
+                    onChapterEnter: [
+                         {
+                             layer: 'nyc-wi-fi-hotspot-locations',
+                             opacity: 1
+                         }
+                    ],
+                    onChapterExit: [
+                      {
+                          layer: 'nyc-wi-fi-hotspot-locations',
+                          opacity: 1
+                      }
+                    ]
+                },
+                {
+                    id: 'preview-wifi',
+                    title: 'End',
+                    //image: './path/to/image/source.png',
+                    description: 'This is the first iteration for a larger project. Stay tuned. Data source NYC Open Data. Broadband speed: https://data.cityofnewyork.us/dataset/Internet-Master-Plan-Broadband-Choice-and-Speed-by/8ess-ssnw Wifi hotspots: https://data.cityofnewyork.us/City-Government/NYC-Wi-Fi-Hotspot-Locations/yjub-udmw  ',
+                    location: {
+                      center: { lon: -74.09232, lat: 40.73593 },
+                      zoom: 10.44,
+                      pitch: 0.00,
+                      bearing: 0.00
+                    },
+                    onChapterEnter: [
+                         {
+                             layer: 'nyc-wi-fi-hotspot-locations',
+                             opacity: 1
+                         }
+                    ],
+                    onChapterExit: [
+
+                      {
+                          layer: 'nyc-wi-fi-hotspot-locations',
+                          opacity: 0
+                      }
+                    ]
+                },
     ]
 };
