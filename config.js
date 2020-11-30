@@ -5,14 +5,14 @@ var config = {
     theme: 'light',
     alignment: 'left',
     title: 'The COVID Pandemic through the Lens of Vulnerable Youth',
-    subtitle: 'Final Project for 11.154/11.454 Big Data, Visualization, and Society',
-    byline: 'By Naroa Coretti Sanchez, Ayaka Yamashita, Hyun-Chae Chad Loh',
+    subtitle: 'How much has NYC been prepared for this unprecedented situation?',
+    byline: 'Final Project for 11.154/11.454 Big Data, Visualization, and Society / By Naroa Coretti Sanchez, Ayaka Yamashita, Hyun-Chae Chad Loh',
     footer: 'Source: NYC OpenData, CDC/ATSDR, US Census',
     chapters: [
         {
             id: 'preview',
-            title: 'Youth in NYC during Covid-19',
-            description: 'Eat, play, and learn are the most important elements for children’s wellness. Covid-19 has changed the situation around those three because of the closure of schools; No more meals from school (Eat), No access to school playground (Play), No more in-person class opportunity (Learn)',
+            title: 'Youth Situation in NYC during Covid-19',
+            description: 'Eat, play, and learn are the most important elements of youth wellness. However, when the stay-at-home order and school closures went into effect, New York City's youth were subjected to the triple burden of not being able to access school meals, school playground, and in-person classes. First, our project shows how much NYC has been prepared for this unprecedented situation by analyzing access to food, open spaces, and the internet. Then, we further observe how races and social vulnerability relate to access to those essentials. ',
             location: {
               center: { lon: -74.09232, lat: 40.73593 },
               zoom: 10.50,
@@ -64,7 +64,7 @@ var config = {
             description: 'Measures to combat the situations such as food, park, and internet access became extremely important! How much NYC youth have been prepared? First, let us check about food access by analyzing Food Stamps (SNAP) distribution.',
             location: {
               center: { lon: -74.09232, lat: 40.73593 },
-              zoom: 9.00,
+              zoom: 9.50,
               pitch: 0.00,
               bearing: 0.00
             },
