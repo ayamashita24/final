@@ -90,7 +90,7 @@ var config = {
 
                {
                      layer: 'eat',
-                     opacity: 0.4
+                     opacity: 1
                  },
                  {
                      layer: 'play',
