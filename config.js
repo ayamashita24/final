@@ -12,6 +12,7 @@ var config = {
         {
             id: 'preview',
             title: 'Youth Situation in NYC during Covid-19',
+              //image: './path/to/image/source.png',
             description: 'Eat, play, and learn are the most important elements of youth wellness. However, when the stay-at-home order and school closures went into effect, youth in NYC were subjected to the triple burden of not being able to access school meals, school playground, and in-person classes. First, our project shows how much NYC has been prepared for this unprecedented situation by analyzing access to food, open spaces, and the internet. Then, we further observe how races and social vulnerability relate to access to those essentials.',
             location: {
               center: { lon: -74.09232, lat: 40.73593 },
@@ -59,12 +60,11 @@ var config = {
         },
         {
             id: 'food_access',
-            title: 'Food Access',
-            //image: './path/to/image/source.png',
-            description: 'Measures to combat the situations such as food, park, and internet access became extremely important! How much NYC youth have been prepared? First, let us check about food access by analyzing Food Stamps (SNAP) distribution.',
+            title: 'Access to Food',
+            description: 'Food Insecurity is the lack of access, at times, to enough nutritionally adequate food for an active, healthy life for all members of a household. To solve this issue, NYC has worked to make it easier to access benefits programs by investing in SNAP outreach, language access services, and mobile platforms that streamline processes.  (Food Policy Report 2019). Visualizing SNAP (foodstamp) benefits (% households, 2018) gives us a sense of how much NYC city was prepared for food insecurity and how worse could have been if there were not exiting SNAP program. ',
             location: {
               center: { lon: -74.09232, lat: 40.73593 },
-              zoom: 9.50,
+              zoom: 9.70,
               pitch: 0.00,
               bearing: 0.00
             },
