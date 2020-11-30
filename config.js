@@ -4,7 +4,7 @@ var config = {
     showMarkers: false,
     theme: 'light',
     alignment: 'left',
-    title: 'The COVID Pandemic through the lens of vulnerable youth',
+    title: 'The COVID Pandemic through the Lens of Vulnerable Youth',
     subtitle: 'Final Project for 11.154/11.454 Big Data, Visualization, and Society',
     byline: 'By Naroa Coretti Sanchez, Ayaka Yamashita, Hyun-Chae Chad Loh',
     footer: 'Source: NYC OpenData, CDC/ATSDR, US Census',
@@ -63,15 +63,15 @@ var config = {
             //image: './path/to/image/source.png',
             description: 'Measures to combat the situations such as food, park, and internet access became extremely important! How much NYC youth have been prepared? First, let us check about food access by analyzing Food Stamps (SNAP) distribution.',
             location: {
-              center: { lon: -74.00038, lat: 40.77675 },
-              zoom: 12.91,
+              center: { lon: -74.09232, lat: 40.73593 },
+              zoom: 10.20,
               pitch: 0.00,
               bearing: 0.00
             },
             onChapterEnter: [
                  {
                      layer: 'eat',
-                     opacity: 0.4
+                     opacity: 1
                  },
                  {
                      layer: 'play',
@@ -124,7 +124,7 @@ var config = {
                  },
                  {
                      layer: 'play',
-                     opacity: 0.4
+                     opacity: 1
                  },
                 {
                      layer: 'learn',
@@ -177,7 +177,7 @@ var config = {
                  },
                 {
                      layer: 'learn',
-                     opacity: 0.4
+                     opacity: 1
                  },
                 {
                      layer: 'svi',
@@ -196,7 +196,7 @@ var config = {
                  },
                 {
                      layer: 'learn',
-                     opacity: 0.4
+                     opacity: 1
                  },
                 {
                      layer: 'svi',
@@ -230,7 +230,7 @@ var config = {
                  },
                 {
                      layer: 'svi',
-                     opacity: 0
+                     opacity: 1
                  }
             ],
             onChapterExit: [
@@ -249,7 +249,7 @@ var config = {
                  },
                 {
                      layer: 'svi',
-                     opacity: 0
+                     opacity: 0.4
                  }
             ]
         },
