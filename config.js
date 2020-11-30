@@ -153,30 +153,7 @@ var config = {
               }
             ]
         },
-        {
-            id: 'wifi-brooklyn',
-            //title: 'Wifi',
-            //image: './path/to/image/source.png',
-            description: 'While there are much less hotspots, for example, in Brooklyn.' ,
-            location: {
-              center: { lon: -73.94924, lat: 40.63436 },
-              zoom: 12.24,
-              pitch: 53.00,
-              bearing: 8.00
-            },
-            onChapterEnter: [
-                 {
-                     layer: 'nyc-wi-fi-hotspot-locations',
-                     opacity: 1
-                 }
-            ],
-            onChapterExit: [
-              {
-                  layer: 'nyc-wi-fi-hotspot-locations',
-                  opacity: 1
-              }
-            ]
-        },
+        
         {
             id: 'preview-wifi',
             title: 'End',
