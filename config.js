@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/ayamashita24/cki4n98oi5spz19o6yk4agv9u',
+    style: 'mapbox://styles/ayamashita24/cki4qqws400n719qv85jx5yhi',
     accessToken: 'pk.eyJ1IjoiYXlhbWFzaGl0YTI0IiwiYSI6ImNraTNucjd5bTF2bGEzM28yOW8wN2hlcnIifQ.zkkuVYV-XG6cudnqNKC_og',
     showMarkers: false,
     theme: 'light',
@@ -12,7 +12,6 @@ var config = {
         {
             id: 'preview',
             title: 'Youth in NYC during Covid-19',
-            //image: './path/to/image/source.png',
             description: 'Eat, play, and learn are the most important elements for children’s wellness. Covid-19 has changed the situation around those three because of the closure of schools; No more meals from school (Eat), No access to school playground (Play), No more in-person class opportunity (Learn)',
             location: {
               center: { lon: -74.09232, lat: 40.73593 },
@@ -22,24 +21,40 @@ var config = {
             },
             onChapterEnter: [
                  {
-                     layer: 'internet',
-                     opacity: 1
+                     layer: 'eat',
+                     opacity: 0
                  },
                  {
-                     layer: 'snap_num',
+                     layer: 'play',
+                     opacity: 0
+                 },
+                {
+                     layer: 'learn',
+                     opacity: 0
+                 },
+                {
+                     layer: 'svi',
                      opacity: 0
                  }
             ],
             onChapterExit: [
 
-              {
-                  layer: 'nyc-',
-                  opacity: 0
-              },
-              {
-                  layer: 'new-87f2lz',
-                  opacity: 0
-              }
+               {
+                     layer: 'eat',
+                     opacity: 0
+                 },
+                 {
+                     layer: 'play',
+                     opacity: 0
+                 },
+                {
+                     layer: 'learn',
+                     opacity: 0
+                 },
+                {
+                     layer: 'svi',
+                     opacity: 0
+                 }
             ]
         },
         {
