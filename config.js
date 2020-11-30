@@ -110,7 +110,7 @@ var config = {
             id: 'openspace_access',
             title: 'Access to Open Space ',
             //image: './path/to/image/source.png',
-            description: 'We calculated the access to open spaces using NYC’s park property data. However, not all parks listed in the dataset were the same – some were well managed parks while some were just lots with a patch of green – and therefore, we deleted properties that were not suitable for youth’s recreational use. In addition, we used the park maintenance budget data and population data to calculate how much of the city budget is being used for each youth. ',
+            description: 'We calculated the access to open spaces using NYC’s park property data. However, not all parks listed in the dataset were the same – some were well managed parks while some were just lots with a patch of green – and therefore, we deleted properties that were not suitable for youth’s recreational use. In addition, we used the park maintenance budget data(2019) and population data to calculate how much of the city budget is being used for each youth. ',
             location: {
               center: { lon: -74.09232, lat: 40.73593 },
               zoom: 9.70,
@@ -157,12 +157,12 @@ var config = {
         },
         {
             id: 'internet_access',
-            title: 'Internet Access',
+            title: 'Access to Internet',
             //image: './path/to/image/source.png',
-            description: 'And the same happens in The Bronx. Both Brooklyn and The Bronx have higher percentages of BIPOC people than Manhattan.',
+            description: 'Covid-19 has changed drastically the youth education from in-person to online. To understand how much NYC has been prepared for this shift, we analyze the data of internet access for under 18 years old (2018). ',
             location: {
-              center: { lon: -73.95390, lat: 40.82081 },
-              zoom: 9.00,
+              center: { lon: -74.09232, lat: 40.73593 },
+              zoom: 9.70,
               pitch: 0.00,
               bearing: 0.00
             },
@@ -210,8 +210,8 @@ var config = {
             //image: './path/to/image/source.png',
             description: '.',
             location: {
-              center: { lon: -73.96962, lat: 40.78139 },
-              zoom: 9.00,
+              center: { lon: -74.09232, lat: 40.73593 },
+              zoom: 9.70,
               pitch: 0,
               bearing: 0
             },
