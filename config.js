@@ -23,7 +23,7 @@ var config = {
             onChapterEnter: [
                  {
                      layer: 'internet',
-                     opacity: 0
+                     opacity: 1
                  },
                  {
                      layer: 'snap_num',
