@@ -158,7 +158,7 @@ var config = {
             id: 'preview-wifi',
             title: 'End',
             //image: './path/to/image/source.png',
-            description: 'This is the first iteration for a larger project. Stay tuned. Data source NYC Open Data. Broadband speed: https://data.cityofnewyork.us/dataset/Internet-Master-Plan-Broadband-Choice-and-Speed-by/8ess-ssnw Wifi hotspots: https://data.cityofnewyork.us/City-Government/NYC-Wi-Fi-Hotspot-Locations/yjub-udmw  ',
+            description: ' ',
             location: {
               center: { lon: -74.09232, lat: 40.73593 },
               zoom: 10.44,
