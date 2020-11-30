@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/mapbox/light-v10',
+    style: 'mapbox://styles/ayamashita24/cki4n98oi5spz19o6yk4agv9u',
     accessToken: 'pk.eyJ1IjoiYXlhbWFzaGl0YTI0IiwiYSI6ImNraTNucjd5bTF2bGEzM28yOW8wN2hlcnIifQ.zkkuVYV-XG6cudnqNKC_og',
     showMarkers: false,
     theme: 'light',
@@ -22,18 +22,18 @@ var config = {
             },
             onChapterEnter: [
                  {
-                     layer: 'nyc-wi-fi-hotspot-locations',
+                     layer: 'internet',
                      opacity: 0
                  },
                  {
-                     layer: 'new-87f2lz',
+                     layer: 'snap_num',
                      opacity: 0
                  }
             ],
             onChapterExit: [
 
               {
-                  layer: 'nyc-wi-fi-hotspot-locations',
+                  layer: 'nyc-',
                   opacity: 0
               },
               {
