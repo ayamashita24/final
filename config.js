@@ -107,13 +107,13 @@ var config = {
             ]
         },
         {
-            id: 'park_access',
-            title: 'Openspace Access',
+            id: 'openspace_access',
+            title: 'Access to Open Space ',
             //image: './path/to/image/source.png',
-            description: 'Let us check how NYC has been prepared for openspace access via park access.',
+            description: 'We calculated the access to open spaces using NYC’s park property data. However, not all parks listed in the dataset were the same – some were well managed parks while some were just lots with a patch of green – and therefore, we deleted properties that were not suitable for youth’s recreational use. In addition, we used the park maintenance budget data and population data to calculate how much of the city budget is being used for each youth. ',
             location: {
-              center: { lon: -73.99589, lat: 40.67057 },
-              zoom: 9.00,
+              center: { lon: -74.09232, lat: 40.73593 },
+              zoom: 9.70,
               pitch: 0.00,
               bearing: 0.00
             },
