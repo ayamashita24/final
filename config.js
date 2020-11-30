@@ -11,9 +11,8 @@ var config = {
     chapters: [
         {
             id: 'preview',
-            title: 'NYC',
-            //image: './path/to/image/source.png',
-            description: 'The COVID pandemic has further increased some social inequalities due to the different levels of vulnerability found in different sectors of society. One of these inequalities is access to education. We would like to explore the possible relationship of race and income level on the access to education of children, which under the pandemic is directly related to the access to internet. Lets explore together the access to internet of different areas in NY. ',
+            title: 'Youth in NYC during Covid-19',
+            description: 'Eat, play, and learn are the most important elements for children’s wellness. Covid-19 has changed the situation around those three because of the closure of schools; No more meals from school (Eat), No access to school playground (Play), No more in-person class opportunity (Learn)',
             location: {
               center: { lon: -74.09232, lat: 40.73593 },
               zoom: 10.44,
@@ -43,10 +42,9 @@ var config = {
             ]
         },
         {
-            id: 'internet_access_manhattan',
-            title: 'Manhattan',
-            //image: './path/to/image/source.png',
-            description: 'Here we can see the maxium available broadband speeds for all the census blocks. Manttan in general has high maximum speeds. This does not mean that all the homes in that block do indeed have access to internet, but if they do, the speed will be equal or lower than the maximum.',
+            id: 'food_access',
+            title: 'Food Access',
+            description: 'Measures to combat the situations such as food, park, and internet access became extremely important! How much NYC youth have been prepared? First, let's check about food access by analyzing Food Stamps (SNAP) distribution.',
             location: {
               center: { lon: -74.00038, lat: 40.77675 },
               zoom: 12.91,
@@ -72,10 +70,9 @@ var config = {
             ]
         },
         {
-            id: 'internet_access_brooklyn',
-            title: 'Brooklyn',
-            //image: './path/to/image/source.png',
-            description: 'In Brooklyn instead, we can see that there are several blocks with a much lower maximum speed.',
+            id: 'park_access',
+            title: 'Openspace Access',
+            description: 'Let's check how NYC has been prepared for openspace access via park access.',
             location: {
               center: { lon: -73.99589, lat: 40.67057 },
               zoom: 12.24,
@@ -85,20 +82,19 @@ var config = {
             onChapterEnter: [
                  {
                      layer: 'new-87f2lz',
-                     opacity: 0.4
+                     opacity: 1
                  }
             ],
             onChapterExit: [
               {
                   layer: 'new-87f2lz',
-                  opacity: 0.4
+                  opacity: 1
               }
             ]
         },
         {
-            id: 'internet_access_bronx',
-            title: 'The Bronx',
-            //image: './path/to/image/source.png',
+            id: 'internet_access',
+            title: 'Internet Access',
             description: 'And the same happens in The Bronx. Both Brooklyn and The Bronx have higher percentages of BIPOC people than Manhattan.',
             location: {
               center: { lon: -73.95390, lat: 40.82081 },
@@ -129,8 +125,8 @@ var config = {
             ]
         },
         {
-            id: 'wifi-manthattan',
-            title: 'Wifi in Manhattan',
+            id: 'svi',
+            title: 'Social Vulnerability Index',
             //image: './path/to/image/source.png',
             description: 'In a similar way, if we look at the free Wifi hotspots, the density is very high in Manhattan.',
             location: {
@@ -154,53 +150,6 @@ var config = {
             ]
         },
         {
-            id: 'wifi-brooklyn',
-            //title: 'Wifi',
-            //image: './path/to/image/source.png',
-            description: 'While there are much less hotspots, for example, in Brooklyn.' ,
-            location: {
-              center: { lon: -73.94924, lat: 40.63436 },
-              zoom: 12.24,
-              pitch: 53.00,
-              bearing: 8.00
-            },
-            onChapterEnter: [
-                 {
-                     layer: 'nyc-wi-fi-hotspot-locations',
-                     opacity: 1
-                 }
-            ],
-            onChapterExit: [
-              {
-                  layer: 'nyc-wi-fi-hotspot-locations',
-                  opacity: 1
-              }
-            ]
-        },
-        {
-            id: 'preview-wifi',
-            title: 'End',
-            //image: './path/to/image/source.png',
-            description: 'This is the first iteration for a larger project. Stay tuned. Data source NYC Open Data. Broadband speed: https://data.cityofnewyork.us/dataset/Internet-Master-Plan-Broadband-Choice-and-Speed-by/8ess-ssnw Wifi hotspots: https://data.cityofnewyork.us/City-Government/NYC-Wi-Fi-Hotspot-Locations/yjub-udmw  ',
-            location: {
-              center: { lon: -74.09232, lat: 40.73593 },
-              zoom: 10.44,
-              pitch: 0.00,
-              bearing: 0.00
-            },
-            onChapterEnter: [
-                 {
-                     layer: 'nyc-wi-fi-hotspot-locations',
-                     opacity: 1
-                 }
-            ],
-            onChapterExit: [
-
-              {
-                  layer: 'nyc-wi-fi-hotspot-locations',
-                  opacity: 0
-              }
-            ]
-        },
+            
     ]
 };
