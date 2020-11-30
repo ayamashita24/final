@@ -177,7 +177,7 @@ var config = {
                  },
                 {
                      layer: 'learn',
-                     opacity: 1
+                     opacity: 0.7
                  },
                 {
                      layer: 'svi',
@@ -230,7 +230,7 @@ var config = {
                  },
                 {
                      layer: 'svi',
-                     opacity: 1
+                     opacity: 0.7
                  }
             ],
             onChapterExit: [
