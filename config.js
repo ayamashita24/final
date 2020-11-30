@@ -90,7 +90,7 @@ var config = {
 
                {
                      layer: 'eat',
-                     opacity: 1
+                     opacity: 0.4
                  },
                  {
                      layer: 'play',
@@ -177,7 +177,7 @@ var config = {
                  },
                 {
                      layer: 'learn',
-                     opacity: 0.8
+                     opacity: 1
                  },
                 {
                      layer: 'svi',
@@ -196,7 +196,7 @@ var config = {
                  },
                 {
                      layer: 'learn',
-                     opacity: 0.8
+                     opacity: 0.4
                  },
                 {
                      layer: 'svi',
@@ -230,7 +230,7 @@ var config = {
                  },
                 {
                      layer: 'svi',
-                     opacity: 0.5
+                     opacity: 1
                  }
             ],
             onChapterExit: [
@@ -249,7 +249,7 @@ var config = {
                  },
                 {
                      layer: 'svi',
-                     opacity: 0.5
+                     opacity: 0.4
                  }
             ]
         },
