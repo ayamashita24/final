@@ -15,7 +15,7 @@ var config = {
             description: 'Eat, play, and learn are the most important elements for children’s wellness. Covid-19 has changed the situation around those three because of the closure of schools; No more meals from school (Eat), No access to school playground (Play), No more in-person class opportunity (Learn)',
             location: {
               center: { lon: -74.09232, lat: 40.73593 },
-              zoom: 10.44,
+              zoom: 10.50,
               pitch: 0.00,
               bearing: 0.00
             },
@@ -64,7 +64,7 @@ var config = {
             description: 'Measures to combat the situations such as food, park, and internet access became extremely important! How much NYC youth have been prepared? First, let us check about food access by analyzing Food Stamps (SNAP) distribution.',
             location: {
               center: { lon: -74.09232, lat: 40.73593 },
-              zoom: 10.20,
+              zoom: 9.00,
               pitch: 0.00,
               bearing: 0.00
             },
@@ -113,7 +113,7 @@ var config = {
             description: 'Let us check how NYC has been prepared for openspace access via park access.',
             location: {
               center: { lon: -73.99589, lat: 40.67057 },
-              zoom: 12.24,
+              zoom: 9.00,
               pitch: 0.00,
               bearing: 0.00
             },
@@ -162,7 +162,7 @@ var config = {
             description: 'And the same happens in The Bronx. Both Brooklyn and The Bronx have higher percentages of BIPOC people than Manhattan.',
             location: {
               center: { lon: -73.95390, lat: 40.82081 },
-              zoom: 12.24,
+              zoom: 9.00,
               pitch: 0.00,
               bearing: 0.00
             },
@@ -177,7 +177,7 @@ var config = {
                  },
                 {
                      layer: 'learn',
-                     opacity: 1
+                     opacity: 0.8
                  },
                 {
                      layer: 'svi',
@@ -196,7 +196,7 @@ var config = {
                  },
                 {
                      layer: 'learn',
-                     opacity: 1
+                     opacity: 0.8
                  },
                 {
                      layer: 'svi',
@@ -211,7 +211,7 @@ var config = {
             description: '.',
             location: {
               center: { lon: -73.96962, lat: 40.78139 },
-              zoom: 12.24,
+              zoom: 9.00,
               pitch: 0,
               bearing: 0
             },
@@ -230,7 +230,7 @@ var config = {
                  },
                 {
                      layer: 'svi',
-                     opacity: 1
+                     opacity: 0.5
                  }
             ],
             onChapterExit: [
@@ -249,7 +249,7 @@ var config = {
                  },
                 {
                      layer: 'svi',
-                     opacity: 0.4
+                     opacity: 0.5
                  }
             ]
         },
@@ -261,7 +261,7 @@ var config = {
             description: ' ',
             location: {
               center: { lon: -74.09232, lat: 40.73593 },
-              zoom: 10.44,
+              zoom: 10.50,
               pitch: 0.00,
               bearing: 0.00
             },
