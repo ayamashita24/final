@@ -262,43 +262,43 @@ var config = {
               center: { lon: -73.956555, lat: 40.773565 },
               zoom: 12.24,
               pitch: 53.00,
-              bearing: 28.00
+              bearing: 58.00
             },
             onChapterEnter: [
                          {
                              layer: 'eat',
-                             opacity: 0
+                             opacity: 0.5
                          },
                          {
                              layer: 'play',
-                             opacity: 0
+                             opacity: 0.5
                          },
                         {
                              layer: 'learn',
-                             opacity: 0
+                             opacity: 0.5
                          },
                         {
                              layer: 'svi',
-                             opacity: 0
+                             opacity: 0.5
                          }
                     ],
                     onChapterExit: [
 
                        {
                              layer: 'eat',
-                             opacity: 0
+                             opacity: 0.1
                          },
                          {
                              layer: 'play',
-                             opacity: 0
+                             opacity: 0.1
                          },
                         {
                              layer: 'learn',
-                             opacity: 0
+                             opacity: 0.1
                          },
                         {
                              layer: 'svi',
-                             opacity: 0
+                             opacity: 0.1
                          }
             ]
         },
