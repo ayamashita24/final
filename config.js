@@ -309,7 +309,7 @@ var config = {
             description: '.' ,
             location: {
               center: { lon:  -73.9065, lat: 40.6564 },
-              zoom: 12.24,
+              zoom: 14.0,
               pitch: 53.00,
               bearing: 8.00
             },
