@@ -124,7 +124,7 @@ var config = {
                  },
                  {
                      layer: 'play',
-                     opacity: 1
+                     opacity: 0.75
                  },
                 {
                      layer: 'learn',
@@ -253,7 +253,104 @@ var config = {
                  }
             ]
         },
+        {
+            id: 'upper_east_side',
+            title: 'Upper East Side',
+            //image: './path/to/image/source.png',
+            description: '.' ,
+            location: {
+              center: { lon: -73.956555, lat: 40.773565 },
+              zoom: 12.24,
+              pitch: 53.00,
+              bearing: 28.00
+            },
+            onChapterEnter: [
+                         {
+                             layer: 'eat',
+                             opacity: 0
+                         },
+                         {
+                             layer: 'play',
+                             opacity: 0
+                         },
+                        {
+                             layer: 'learn',
+                             opacity: 0
+                         },
+                        {
+                             layer: 'svi',
+                             opacity: 0
+                         }
+                    ],
+                    onChapterExit: [
 
+                       {
+                             layer: 'eat',
+                             opacity: 0
+                         },
+                         {
+                             layer: 'play',
+                             opacity: 0
+                         },
+                        {
+                             layer: 'learn',
+                             opacity: 0
+                         },
+                        {
+                             layer: 'svi',
+                             opacity: 0
+                         }
+            ]
+        },
+        {
+            id: 'brownsville',
+            title: 'Brownsville',
+            //image: './path/to/image/source.png',
+            description: '.' ,
+            location: {
+              center: { lon:  -73.9065, lat: 40.6564 },
+              zoom: 12.24,
+              pitch: 53.00,
+              bearing: 8.00
+            },
+            onChapterEnter: [
+                         {
+                             layer: 'eat',
+                             opacity: 0
+                         },
+                         {
+                             layer: 'play',
+                             opacity: 0
+                         },
+                        {
+                             layer: 'learn',
+                             opacity: 0
+                         },
+                        {
+                             layer: 'svi',
+                             opacity: 0
+                         }
+                    ],
+                    onChapterExit: [
+
+                       {
+                             layer: 'eat',
+                             opacity: 0
+                         },
+                         {
+                             layer: 'play',
+                             opacity: 0
+                         },
+                        {
+                             layer: 'learn',
+                             opacity: 0
+                         },
+                        {
+                             layer: 'svi',
+                             opacity: 0
+                         }
+            ]
+        },
         {
             id: 'transition',
             title: 'Comparison',
