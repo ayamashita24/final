@@ -316,38 +316,38 @@ var config = {
             onChapterEnter: [
                          {
                              layer: 'eat',
-                             opacity: 0
+                             opacity: 0.5
                          },
                          {
                              layer: 'play',
-                             opacity: 0
+                             opacity: 0.35
                          },
                         {
                              layer: 'learn',
-                             opacity: 0
+                             opacity: 0.2
                          },
                         {
                              layer: 'svi',
-                             opacity: 0
+                             opacity: 0.35
                          }
                     ],
                     onChapterExit: [
 
                        {
                              layer: 'eat',
-                             opacity: 0
+                             opacity: 0.1
                          },
                          {
                              layer: 'play',
-                             opacity: 0
+                             opacity: 0.1
                          },
                         {
                              layer: 'learn',
-                             opacity: 0
+                             opacity: 0.1
                          },
                         {
                              layer: 'svi',
-                             opacity: 0
+                             opacity: 0.1
                          }
             ]
         },
