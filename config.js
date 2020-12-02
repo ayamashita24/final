@@ -260,9 +260,9 @@ var config = {
             description: '.' ,
             location: {
               center: { lon: -73.956555, lat: 40.773565 },
-              zoom: 12.24,
+              zoom: 14.0,
               pitch: 53.00,
-              bearing: 58.00
+              bearing: 28.00
             },
             onChapterEnter: [
                          {
@@ -271,15 +271,15 @@ var config = {
                          },
                          {
                              layer: 'play',
-                             opacity: 0.5
+                             opacity: 0.35
                          },
                         {
                              layer: 'learn',
-                             opacity: 0.5
+                             opacity: 0.2
                          },
                         {
                              layer: 'svi',
-                             opacity: 0.5
+                             opacity: 0.35
                          }
                     ],
                     onChapterExit: [
