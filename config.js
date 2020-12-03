@@ -202,6 +202,7 @@ var config = {
                         {
                              layer: 'svi',
                              opacity: 0
+                      ]
                          },
         {
             id: 'openspace_access',
@@ -348,6 +349,8 @@ var config = {
                         {
                              layer: 'svi',
                              opacity: 0
+
+                      ]
                          },
         {
             id: 'internet_access',
@@ -494,6 +497,7 @@ var config = {
                         {
                              layer: 'svi',
                              opacity: 0
+                     ]
                          },
         {
             id: 'svi',
@@ -542,9 +546,6 @@ var config = {
                      layer: 'svi',
                      opacity: 0.4
                  }
-            ]
-        }
-
             ]
         },
         {
