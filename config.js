@@ -60,8 +60,8 @@ var config = {
         },
         {
             id: 'food_access',
-            title: 'Access to Food',
-            description: 'Food Insecurity is the lack of access, at times, to enough nutritionally adequate food for an active, healthy life for all members of a household. To solve this issue, NYC has worked to make it easier to access benefits programs by investing in SNAP outreach, language access services, and mobile platforms that streamline processes.  (Food Policy Report, 2019). Visualizing SNAP (food stamp) benefits (% households, US Census 2018) gives us a sense of how much NYC city was prepared for food insecurity and how worse it could have been if there were not exiting the SNAP program. ',
+            title: 'How about Food Access?',
+            description: 'The stronger yellow means less access to food. Which part of the city suffers more from food insecurity? ',
             location: {
               center: { lon: -74.09232, lat: 40.73593 },
               zoom: 9.70,
@@ -108,12 +108,12 @@ var config = {
         },
         {
             id: 'upper_east_side',
-            title: 'Upper East Side',
+            title: 'Upper East Side?',
             //image: './path/to/image/source.png',
-            description: '.' ,
+            description: 'No, one of the most richest neightborhood in NYC.' ,
             location: {
               center: { lon: -73.956555, lat: 40.773565 },
-              zoom: 13.0,
+              zoom: 12.7,
               pitch: 53.00,
               bearing: 28.00
             },
@@ -157,12 +157,12 @@ var config = {
         },
         {
             id: 'brownsville',
-            title: 'Brownsville',
+            title: 'What about Brownsville?',
             //image: './path/to/image/source.png',
-            description: '.' ,
+            description: 'Can neighborhood with relatively high food insecurity even before COVID-19 bear with the situation that children cannot eat at school?' ,
             location: {
               center: { lon:  -73.9065, lat: 40.6564 },
-              zoom: 13.0,
+              zoom: 12.7,
               pitch: 53.00,
               bearing: 8.00
             },
@@ -206,10 +206,9 @@ var config = {
         },
         {
             id: 'openspace_access',
-            title: 'Access to Open Space ',
+            title: ' The 2nd element: Access to Playground ',
             //image: './path/to/image/source.png',
-            description: 'We calculated access to open spaces using NYC’s park property data. However, not all parks listed in the dataset were the same – some were well-managed parks while some were just lots with a patch of green – and therefore, we deleted properties that were not suitable for youth’s recreational use. In addition, we used the park maintenance budget data(NYC OpenData 2019) and population data to calculate how much of the city budget is being used for each youth. ',
-            location: {
+            description: 'Covid-19 deprived access to school playgrounds from youth and well-maintained parks became alternatives. The place with stronger green requires more budget and care.',
               center: { lon: -74.09232, lat: 40.73593 },
               zoom: 9.70,
               pitch: 0.00,
@@ -255,12 +254,12 @@ var config = {
         },
         {
             id: 'upper_east_side2',
-            title: 'Upper East Side',
+            //title: 'Upper East Side',
             //image: './path/to/image/source.png',
-            description: '.' ,
+            description: ' Upper east side has well-maintained parks where youth can play.' ,
             location: {
               center: { lon: -73.956555, lat: 40.773565 },
-              zoom: 13.0,
+              zoom: 12.7,
               pitch: 53.00,
               bearing: 28.00
             },
@@ -304,12 +303,12 @@ var config = {
         },
         {
             id: 'brownsville2',
-            title: 'Brownsville',
+            //title: 'Brownsville',
             //image: './path/to/image/source.png',
-            description: '.' ,
+            description: 'Parks at Brownsville needs to be more maintained. ' ,
             location: {
               center: { lon:  -73.9065, lat: 40.6564 },
-              zoom: 13.0,
+              zoom: 12.7,
               pitch: 53.00,
               bearing: 8.00
             },
@@ -353,9 +352,9 @@ var config = {
         },
         {
             id: 'internet_access',
-            title: 'Access to the Internet',
+            title: 'The 3rd element: Access to the Internet',
             //image: './path/to/image/source.png',
-            description: 'Covid-19 has changed drastically youth education from in-person to online. To understand how much NYC has been prepared for this shift, we analyze the data of internet access for under 18 years old (US Census 2018). ',
+            description: ' Internet became essential infrastructure for Online education during the pandemic. Was the City prepared enough for it?   ',
             location: {
               center: { lon: -74.09232, lat: 40.73593 },
               zoom: 9.70,
@@ -403,12 +402,12 @@ var config = {
 
         {
             id: 'upper_east_side3',
-            title: 'Upper East Side',
+            //title: 'Upper East Side',
             //image: './path/to/image/source.png',
-            description: '.' ,
+            description: 'No color means no problem. It seems that Upper East Side has no problem in internet access. ' ,
             location: {
               center: { lon: -73.956555, lat: 40.773565 },
-              zoom: 13.0,
+              zoom: 12.7,
               pitch: 53.00,
               bearing: 28.00
             },
@@ -452,12 +451,12 @@ var config = {
         },
         {
             id: 'brownsville3',
-            title: 'Brownsville',
+            //title: 'Brownsville',
             //image: './path/to/image/source.png',
-            description: '.' ,
+            description: 'Internet at Brownsbille needs to be developed more.' ,
             location: {
               center: { lon:  -73.9065, lat: 40.6564 },
-              zoom: 13.0,
+              zoom: 12.7,
               pitch: 53.00,
               bearing: 8.00
             },
@@ -501,9 +500,9 @@ var config = {
         },
         {
             id: 'svi',
-            title: 'Social Vulnerability Index',
+            title: 'How does Social Vulnerability relate to 3 elements of Youth Wellness?',
             //image: './path/to/image/source.png',
-            description: 'We use CDC SVI, which uses 15 U.S. census variables to help local officials identify communities that may need support before, during, or after disasters (CDC/ATSDR 2018). In our case, it will help us to identify youth who have been vulnerable. ',
+            description: ' The map shows the place with high social vulnerability with stronger color. ',
             location: {
               center: { lon: -74.09232, lat: 40.73593 },
               zoom: 9.70,
