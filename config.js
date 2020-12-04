@@ -212,7 +212,7 @@ var config = {
             description: '.' ,
             location: {
               center: { lon: -73.956555, lat: 40.773565 },
-              zoom: 12.0,
+              zoom: 13.0,
               pitch: 53.00,
               bearing: 28.00
             },
@@ -261,45 +261,45 @@ var config = {
             description: '.' ,
             location: {
               center: { lon:  -73.9065, lat: 40.6564 },
-              zoom: 12.0,
+              zoom: 13.0,
               pitch: 53.00,
               bearing: 8.00
             },
             onChapterEnter: [
                          {
                              layer: 'eat',
-                             opacity: 0.5
+                             opacity: 0
                          },
                          {
                              layer: 'play',
-                             opacity: 0.35
+                             opacity: 0
                          },
                         {
                              layer: 'learn',
-                             opacity: 0.2
+                             opacity: 0.58
                          },
                         {
                              layer: 'svi',
-                             opacity: 0.35
+                             opacity: 0
                          }
                     ],
                     onChapterExit: [
 
                        {
                              layer: 'eat',
-                             opacity: 0.1
+                             opacity: 0
                          },
                          {
                              layer: 'play',
-                             opacity: 0.1
+                             opacity: 0
                          },
                         {
                              layer: 'learn',
-                             opacity: 0.1
+                             opacity: 0.4
                          },
                         {
                              layer: 'svi',
-                             opacity: 0.1
+                             opacity: 0
                          }
             ]
         },
