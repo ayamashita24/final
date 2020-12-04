@@ -1,6 +1,6 @@
 var config = {
     style: 'mapbox://styles/ayamashita24/cki9g6s3y4i1319rwxek2kyoq',
-    accessToken: 'pk.eyJ1IjoiYXlhbWFzaGl0YTI0IiwiYSI6ImNraTNucjd5bTF2bGEzM28yOW8wN2hlcnIifQ.zkkuVYV-XG6cudnqNKC_og',
+    accessToken: 'pk.eyJ1IjoiYXlhbWFzaGl0YTI0IiwiYSI6ImNraTlvd3N1NTBhNHMydW14c3V2Y242NGkifQ.Ej7QL5RXwMlo9fAAtqwZUg',
     showMarkers: false,
     theme: 'light',
     alignment: 'left',
