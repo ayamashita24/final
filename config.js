@@ -1,19 +1,19 @@
 var config = {
-    style: 'mapbox://styles/ayamashita24/cki4qqws400n719qv85jx5yhi',
+    style: 'mapbox://styles/ayamashita24/cki9g6s3y4i1319rwxek2kyoq',
     accessToken: 'pk.eyJ1IjoiYXlhbWFzaGl0YTI0IiwiYSI6ImNraTNucjd5bTF2bGEzM28yOW8wN2hlcnIifQ.zkkuVYV-XG6cudnqNKC_og',
     showMarkers: false,
     theme: 'light',
     alignment: 'left',
     title: 'The COVID Pandemic through the Lens of Vulnerable Youth in NYC',
-    subtitle: 'How much has NYC been prepared for this unprecedented situation?',
+    subtitle: 'Was NYC prepared for this unprecedented social disaster?',
     byline: 'Final Project for 11.154/11.454 Big Data, Visualization, and Society / By Naroa Coretti Sanchez, Ayaka Yamashita, Hyun-Chae Chad Loh',
     //footer: '',
     chapters: [
         {
             id: 'preview',
-            title: 'Youth Situation in NYC during Covid-19',
+            title: 'Elements of Youth Wellness; EAT, PLAY, and LEARN',
               //image: './path/to/image/source.png',
-            description: 'Eat, play, and learn are the most important elements of youth wellness. However, when the stay-at-home order and school closures went into effect, youth in NYC were subjected to the triple burden of not being able to access school meals, school playground, and in-person classes. First, our project shows how much NYC has been prepared for this unprecedented situation by analyzing access to food, open spaces, and the internet. Then, we further observe how races and social vulnerability relate to access to those essentials.',
+            description: 'When the stay-at-home order and school closures went into effect, youth in NYC were subjected to the triple burden of not being able to access school meals, school playgrounds, and in-person classes. By analyzing census data, we are able to display where the city may need to focus in the future.',
             location: {
               center: { lon: -74.09232, lat: 40.73593 },
               zoom: 10.50,
@@ -548,54 +548,6 @@ var config = {
                  }
             ]
         },
-        {
-            id: 'transition',
-            title: 'Comparison',
-            //image: './path/to/image/source.png',
-            description: 'By comparing food, open space, internet access with SVI, and race information, we can identify which areas and how many youth populations might be at risk during Covid-19 time. ',
-            location: {
-              center: { lon: -74.09232, lat: 40.73593 },
-              zoom: 10.50,
-              pitch: 0.00,
-              bearing: 0.00
-            },
-    onChapterEnter: [
-                 {
-                     layer: 'eat',
-                     opacity: 0
-                 },
-                 {
-                     layer: 'play',
-                     opacity: 0
-                 },
-                {
-                     layer: 'learn',
-                     opacity: 0
-                 },
-                {
-                     layer: 'svi',
-                     opacity: 0
-                 }
-            ],
-            onChapterExit: [
 
-               {
-                     layer: 'eat',
-                     opacity: 0
-                 },
-                 {
-                     layer: 'play',
-                     opacity: 0
-                 },
-                {
-                     layer: 'learn',
-                     opacity: 0
-                 },
-                {
-                     layer: 'svi',
-                     opacity: 0
-                 }
-            ]
-        },
     ]
 };
