@@ -204,6 +204,105 @@ var config = {
                  }
             ]
         },
+
+        {
+            id: 'upper_east_side',
+            title: 'Upper East Side',
+            //image: './path/to/image/source.png',
+            description: '.' ,
+            location: {
+              center: { lon: -73.956555, lat: 40.773565 },
+              zoom: 12.0,
+              pitch: 53.00,
+              bearing: 28.00
+            },
+            onChapterEnter: [
+                         {
+                             layer: 'eat',
+                             opacity: 0
+                         },
+                         {
+                             layer: 'play',
+                             opacity: 0
+                         },
+                        {
+                             layer: 'learn',
+                             opacity: 0.58
+                         },
+                        {
+                             layer: 'svi',
+                             opacity: 0
+                         }
+                    ],
+                    onChapterExit: [
+
+                       {
+                             layer: 'eat',
+                             opacity: 0
+                         },
+                         {
+                             layer: 'play',
+                             opacity: 0
+                         },
+                        {
+                             layer: 'learn',
+                             opacity: 0.4
+                         },
+                        {
+                             layer: 'svi',
+                             opacity: 0
+                         }
+            ]
+        },
+        {
+            id: 'brownsville',
+            title: 'Brownsville',
+            //image: './path/to/image/source.png',
+            description: '.' ,
+            location: {
+              center: { lon:  -73.9065, lat: 40.6564 },
+              zoom: 12.0,
+              pitch: 53.00,
+              bearing: 8.00
+            },
+            onChapterEnter: [
+                         {
+                             layer: 'eat',
+                             opacity: 0.5
+                         },
+                         {
+                             layer: 'play',
+                             opacity: 0.35
+                         },
+                        {
+                             layer: 'learn',
+                             opacity: 0.2
+                         },
+                        {
+                             layer: 'svi',
+                             opacity: 0.35
+                         }
+                    ],
+                    onChapterExit: [
+
+                       {
+                             layer: 'eat',
+                             opacity: 0.1
+                         },
+                         {
+                             layer: 'play',
+                             opacity: 0.1
+                         },
+                        {
+                             layer: 'learn',
+                             opacity: 0.1
+                         },
+                        {
+                             layer: 'svi',
+                             opacity: 0.1
+                         }
+            ]
+        },
         {
             id: 'svi',
             title: 'Social Vulnerability Index',
@@ -251,104 +350,6 @@ var config = {
                      layer: 'svi',
                      opacity: 0.4
                  }
-            ]
-        },
-        {
-            id: 'upper_east_side',
-            title: 'Upper East Side',
-            //image: './path/to/image/source.png',
-            description: '.' ,
-            location: {
-              center: { lon: -73.956555, lat: 40.773565 },
-              zoom: 14.0,
-              pitch: 53.00,
-              bearing: 28.00
-            },
-            onChapterEnter: [
-                         {
-                             layer: 'eat',
-                             opacity: 0.5
-                         },
-                         {
-                             layer: 'play',
-                             opacity: 0.35
-                         },
-                        {
-                             layer: 'learn',
-                             opacity: 0.2
-                         },
-                        {
-                             layer: 'svi',
-                             opacity: 0.35
-                         }
-                    ],
-                    onChapterExit: [
-
-                       {
-                             layer: 'eat',
-                             opacity: 0.1
-                         },
-                         {
-                             layer: 'play',
-                             opacity: 0.1
-                         },
-                        {
-                             layer: 'learn',
-                             opacity: 0.1
-                         },
-                        {
-                             layer: 'svi',
-                             opacity: 0.1
-                         }
-            ]
-        },
-        {
-            id: 'brownsville',
-            title: 'Brownsville',
-            //image: './path/to/image/source.png',
-            description: '.' ,
-            location: {
-              center: { lon:  -73.9065, lat: 40.6564 },
-              zoom: 14.0,
-              pitch: 53.00,
-              bearing: 8.00
-            },
-            onChapterEnter: [
-                         {
-                             layer: 'eat',
-                             opacity: 0.5
-                         },
-                         {
-                             layer: 'play',
-                             opacity: 0.35
-                         },
-                        {
-                             layer: 'learn',
-                             opacity: 0.2
-                         },
-                        {
-                             layer: 'svi',
-                             opacity: 0.35
-                         }
-                    ],
-                    onChapterExit: [
-
-                       {
-                             layer: 'eat',
-                             opacity: 0.1
-                         },
-                         {
-                             layer: 'play',
-                             opacity: 0.1
-                         },
-                        {
-                             layer: 'learn',
-                             opacity: 0.1
-                         },
-                        {
-                             layer: 'svi',
-                             opacity: 0.1
-                         }
             ]
         },
         {
