@@ -254,7 +254,7 @@ var config = {
             ]
         },
         {
-            id: 'upper_east_side',
+            id: 'upper_east_side2',
             title: 'Upper East Side',
             //image: './path/to/image/source.png',
             description: '.' ,
@@ -303,7 +303,7 @@ var config = {
             ]
         },
         {
-            id: 'brownsville',
+            id: 'brownsville2',
             title: 'Brownsville',
             //image: './path/to/image/source.png',
             description: '.' ,
@@ -402,7 +402,7 @@ var config = {
         },
 
         {
-            id: 'upper_east_side',
+            id: 'upper_east_side3',
             title: 'Upper East Side',
             //image: './path/to/image/source.png',
             description: '.' ,
@@ -451,7 +451,7 @@ var config = {
             ]
         },
         {
-            id: 'brownsville',
+            id: 'brownsville3',
             title: 'Brownsville',
             //image: './path/to/image/source.png',
             description: '.' ,
