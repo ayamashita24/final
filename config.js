@@ -60,8 +60,8 @@ var config = {
         },
         {
             id: 'food_access',
-            title: 'Access to Food',
-            description: 'Food Insecurity is the lack of access, at times, to enough nutritionally adequate food for an active, healthy life for all members of a household. To solve this issue, NYC has worked to make it easier to access benefits programs by investing in SNAP outreach, language access services, and mobile platforms that streamline processes.  (Food Policy Report, 2019). Visualizing SNAP (food stamp) benefits (% households, US Census 2018) gives us a sense of how much NYC city was prepared for food insecurity and how worse it could have been if there were not exiting the SNAP program. ',
+            title: 'How about Food Access?',
+            description: 'The stronger yellow means less access to food. Which part of the city suffers more from food insecurity?',
             location: {
               center: { lon: -74.09232, lat: 40.73593 },
               zoom: 9.70,
@@ -108,12 +108,12 @@ var config = {
         },
         {
             id: 'upper_east_side',
-            title: 'Upper East Side',
+            title: 'Upper East Side?',
             //image: './path/to/image/source.png',
-            description: '.' ,
+            description: 'No, one of the most richest neightborhood in NYC.' ,
             location: {
               center: { lon: -73.956555, lat: 40.773565 },
-              zoom: 13.0,
+              zoom: 12.7,
               pitch: 53.00,
               bearing: 28.00
             },
@@ -157,12 +157,12 @@ var config = {
         },
         {
             id: 'brownsville',
-            title: 'Brownsville',
+            title: 'What about Brownsville?',
             //image: './path/to/image/source.png',
-            description: '.' ,
+            description: 'Can neighborhood with relatively high food insecurity even before COVID-19 bear with the situation that children cannot eat at school?' ,
             location: {
               center: { lon:  -73.9065, lat: 40.6564 },
-              zoom: 13.0,
+              zoom: 12.7,
               pitch: 53.00,
               bearing: 8.00
             },
