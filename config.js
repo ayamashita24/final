@@ -61,7 +61,7 @@ var config = {
         {
             id: 'food_access',
             title: 'How about Food Access?',
-            description: 'The stronger yellow means less access to food. Which part of the city suffers more from food insecurity?',
+            description: 'Less yellow ares have to be continuously given attention for food insecurity, however, in general, the City has been doing good join in terms of this issue.',
             location: {
               center: { lon: -74.09232, lat: 40.73593 },
               zoom: 9.70,
@@ -108,9 +108,9 @@ var config = {
         },
         {
             id: 'upper_east_side',
-            title: 'Upper East Side?',
+            title: 'Situation in Upper East Side',
             //image: './path/to/image/source.png',
-            description: 'No, one of the most richest neightborhood in NYC.' ,
+            description: 'Upper East Side seems not having any issues in terms of food insecurity. This neighborhood has been dominated by wealthy White Anglo-Saxon Protestant families. The neighborhood contains the greatest concentration of individual wealth in Manhattan. As of 2011, the median household income for the Upper East Side was $131,492.' ,
             location: {
               center: { lon: -73.956555, lat: 40.773565 },
               zoom: 12.7,
@@ -157,9 +157,9 @@ var config = {
         },
         {
             id: 'brownsville',
-            title: 'What about Brownsville?',
+            title: 'Situation in Brownsville?',
             //image: './path/to/image/source.png',
-            description: 'Can neighborhood with relatively high food insecurity even before COVID-19 bear with the situation that children cannot eat at school?',
+            description: 'Brownsville has slight issue with food insecurity. Brownsville had been the poorest neighborhood for several years, as "Bombsville" because of its high concentration of empty lots and burned-out buildings.  Brownsville contained a concentrated, multigenerational black poverty that caused its development to remain static. Can neighborhood with relatively high food insecurity even before COVID-19 bear with the situation that children cannot eat at school?',
             location: {
               center: { lon:  -73.9065, lat: 40.6564 },
               zoom: 12.7,
