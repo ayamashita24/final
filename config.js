@@ -61,7 +61,7 @@ var config = {
         {
             id: 'food_access',
             title: 'How about Food Access?',
-            description: 'Less yellow ares have to be continuously given attention for food insecurity, however, in general, the City has been doing good join in terms of this issue.',
+            description: 'Less yellow areas have to be continuously given attention for food insecurity, however, in general, the City has been doing good job in terms of this issue.',
             location: {
               center: { lon: -74.09232, lat: 40.73593 },
               zoom: 9.70,
@@ -71,7 +71,7 @@ var config = {
             onChapterEnter: [
                  {
                      layer: 'eat',
-                     opacity: 1
+                     opacity: 0.8
                  },
                  {
                      layer: 'play',
@@ -108,7 +108,7 @@ var config = {
         },
         {
             id: 'upper_east_side',
-            title: 'Situation in Upper East Side',
+            title: 'Situation in Upper East Side?',
             //image: './path/to/image/source.png',
             description: 'Upper East Side seems not having any issues in terms of food insecurity. This neighborhood has been dominated by wealthy White Anglo-Saxon Protestant families. The neighborhood contains the greatest concentration of individual wealth in Manhattan. As of 2011, the median household income for the Upper East Side was $131,492.' ,
             location: {
@@ -120,7 +120,7 @@ var config = {
             onChapterEnter: [
                          {
                              layer: 'eat',
-                             opacity: 1
+                             opacity: 0.8
                          },
                          {
                              layer: 'play',
@@ -159,7 +159,7 @@ var config = {
             id: 'brownsville',
             title: 'Situation in Brownsville?',
             //image: './path/to/image/source.png',
-            description: 'Brownsville has slight issue with food insecurity. Brownsville had been the poorest neighborhood for several years, as "Bombsville" because of its high concentration of empty lots and burned-out buildings.  Brownsville contained a concentrated, multigenerational black poverty that caused its development to remain static. Can neighborhood with relatively high food insecurity even before COVID-19 bear with the situation that children cannot eat at school?',
+            description: 'Brownsville has slight issue with food insecurity. Brownsville had been the poorest neighborhood for several years. It is high concentration of empty lots and burned-out buildings. Brownsville contained a concentrated, multigenerational black residents that caused its development to remain static. ?',
             location: {
               center: { lon:  -73.9065, lat: 40.6564 },
               zoom: 12.7,
@@ -169,7 +169,7 @@ var config = {
             onChapterEnter: [
                          {
                              layer: 'eat',
-                             opacity: 1
+                             opacity: 0.8
                          },
                          {
                              layer: 'play',
@@ -208,7 +208,7 @@ var config = {
             id: 'openspace_access',
             title: 'The 2nd element: Access to Playground',
             //image: './path/to/image/source.png',
-            description: 'Covid-19 deprived access to school playgrounds from youth and well-maintained parks became alternatives. The place with stronger green requires more budget and care.',
+            description: 'Covid-19 deprived access to school playgrounds from youth and parks became alternatives. The place with less green indicates less budget, which means less maintained. In general, NYC needs to work on more for increasing the numbers of well-maintained parks.',
             location: {
               center: { lon: -74.09232, lat: 40.73593 },
               zoom: 9.70,
@@ -222,7 +222,7 @@ var config = {
                  },
                  {
                      layer: 'play',
-                     opacity: 0.75
+                     opacity: 0.8
                  },
                 {
                      layer: 'learn',
@@ -271,7 +271,7 @@ var config = {
                          },
                          {
                              layer: 'play',
-                             opacity: 0.75
+                             opacity: 0.8
                          },
                         {
                              layer: 'learn',
@@ -294,7 +294,7 @@ var config = {
                          },
                         {
                              layer: 'learn',
-                             opacity: 0.4
+                             opacity: 0
                          },
                         {
                              layer: 'svi',
@@ -320,7 +320,7 @@ var config = {
                          },
                          {
                              layer: 'play',
-                             opacity: 0.75
+                             opacity: 0.8
                          },
                         {
                              layer: 'learn',
@@ -355,7 +355,7 @@ var config = {
             id: 'internet_access',
             title: 'The 3rd element: Access to the Internet',
             //image: './path/to/image/source.png',
-            description: 'Internet became essential infrastructure for Online education during the pandemic. Was the City prepared enough for it?',
+            description: 'Internet became essential infrastructure for Online education during the pandemic. Less color places need more internet acecss. Overall NYC has been doing good job.',
             location: {
               center: { lon: -74.09232, lat: 40.73593 },
               zoom: 9.70,
@@ -373,7 +373,7 @@ var config = {
                  },
                 {
                      layer: 'learn',
-                     opacity: 0.58
+                     opacity: 0.8
                  },
                 {
                      layer: 'svi',
@@ -423,7 +423,7 @@ var config = {
                          },
                         {
                              layer: 'learn',
-                             opacity: 0.58
+                             opacity: 0.8
                          },
                         {
                              layer: 'svi',
@@ -454,7 +454,7 @@ var config = {
             id: 'brownsville3',
             title: 'Brownsville',
             //image: './path/to/image/source.png',
-            description: 'Internet at Brownsbille needs to be developed more.' ,
+            description: 'Internet at Brownsbille do not have much problems, either.' ,
             location: {
               center: { lon:  -73.9065, lat: 40.6564 },
               zoom: 12.7,
@@ -472,7 +472,7 @@ var config = {
                          },
                         {
                              layer: 'learn',
-                             opacity: 0.58
+                             opacity: 0.8
                          },
                         {
                              layer: 'svi',
@@ -525,7 +525,7 @@ var config = {
                  },
                 {
                      layer: 'svi',
-                     opacity: 0.7
+                     opacity: 0.8
                  }
             ],
             onChapterExit: [
