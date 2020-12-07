@@ -113,7 +113,7 @@ var config = {
             description: 'Upper East Side seems not having any issues in terms of food insecurity. This neighborhood has been dominated by wealthy White Anglo-Saxon Protestant families. The neighborhood contains the greatest concentration of individual wealth in Manhattan. As of 2011, the median household income for the Upper East Side was $131,492.' ,
             location: {
               center: { lon: -73.956555, lat: 40.773565 },
-              zoom: 12.7,
+              zoom: 12.85,
               pitch: 53.00,
               bearing: 28.00
             },
@@ -162,7 +162,7 @@ var config = {
             description: 'Brownsville has slight issue with food insecurity. Brownsville had been the poorest neighborhood for several years. It is high concentration of empty lots and burned-out buildings. Brownsville contained a concentrated, multigenerational black residents that caused its development to remain static. ?',
             location: {
               center: { lon:  -73.9065, lat: 40.6564 },
-              zoom: 12.7,
+              zoom: 12.85,
               pitch: 53.00,
               bearing: 8.00
             },
@@ -260,7 +260,7 @@ var config = {
             description: 'Upper east side has well-maintained parks where youth can play.' ,
             location: {
               center: { lon: -73.956555, lat: 40.773565 },
-              zoom: 12.7,
+              zoom: 12.85,
               pitch: 53.00,
               bearing: 28.00
             },
@@ -309,7 +309,7 @@ var config = {
             description: 'Parks at Brownsville needs to be more maintained.' ,
             location: {
               center: { lon:  -73.9065, lat: 40.6564 },
-              zoom: 12.7,
+              zoom: 12.85,
               pitch: 53.00,
               bearing: 8.00
             },
@@ -405,10 +405,10 @@ var config = {
             id: 'upper_east_side3',
             title: 'Upper East Side',
             //image: './path/to/image/source.png',
-            description: 'No color means no problem. It seems that Upper East Side has no problem in internet access.' ,
+            description: 'Upper East Side has no problem in internet access.' ,
             location: {
               center: { lon: -73.956555, lat: 40.773565 },
-              zoom: 12.7,
+              zoom: 12.85,
               pitch: 53.00,
               bearing: 28.00
             },
@@ -457,7 +457,7 @@ var config = {
             description: 'Internet at Brownsbille do not have much problems, either.' ,
             location: {
               center: { lon:  -73.9065, lat: 40.6564 },
-              zoom: 12.7,
+              zoom: 12.85,
               pitch: 53.00,
               bearing: 8.00
             },
@@ -472,7 +472,7 @@ var config = {
                          },
                         {
                              layer: 'learn',
-                             opacity: 0.8
+                             opacity: 0.85
                          },
                         {
                              layer: 'svi',
