@@ -110,7 +110,7 @@ var config = {
             id: 'upper_east_side',
             title: 'Situation in Upper East Side?',
             //image: './path/to/image/source.png',
-            description: 'Upper East Side seems not having any issues in terms of food insecurity. This neighborhood has been dominated by wealthy White Anglo-Saxon Protestant families. The neighborhood contains the greatest concentration of individual wealth in Manhattan. As of 2011, the median household income for the Upper East Side was $131,492.' ,
+            description: 'Upper East Side seems not having any issues in terms of food insecurity. This neighborhood has been dominated by wealthy White Anglo-Saxon Protestant families. The neighborhood contains the greatest concentration of individual wealth in Manhattan. As of 2011, the median household income for the Upper East Side was $131,492.',
             location: {
               center: { lon: -73.956555, lat: 40.773565 },
               zoom: 12.85,
@@ -159,7 +159,7 @@ var config = {
             id: 'brownsville',
             title: 'Situation in Brownsville?',
             //image: './path/to/image/source.png',
-            description: 'Less yellow areas cover Brownsville; that means continuous attention is required. Brownsville had been the poorest neighborhood for several years. It is high concentration of empty lots and burned-out buildings. Brownsville contained a concentrated, multigenerational black residents that caused its development to remain static. ',
+            description: 'Less yellow areas cover Brownsville; that means continuous attention is required. Brownsville had been the poorest neighborhood for several years. It is high concentration of empty lots and burned-out buildings. Brownsville contained a concentrated, multigenerational black residents that caused its development to remain static.',
             location: {
               center: { lon:  -73.9065, lat: 40.6564 },
               zoom: 12.85,
@@ -257,7 +257,7 @@ var config = {
             id: 'upper_east_side2',
             title: 'Upper East Side',
             //image: './path/to/image/source.png',
-            description: 'Even Upper east side areas do not have enough access to parks.' ,
+            description: 'Even Upper east side areas do not have enough access to parks.',
             location: {
               center: { lon: -73.956555, lat: 40.773565 },
               zoom: 12.85,
@@ -306,8 +306,7 @@ var config = {
             id: 'brownsville2',
             title: 'Brownsville',
             //image: './path/to/image/source.png',
-            description: 'NYC needs close attention to this area for park access. Vulnerable youth become more vulnerable
-without proper infrastructure. ' ,
+            description: 'NYC needs close attention to this area for park access. Vulnerable youth become more vulnerable without proper infrastructure. ' ,
             location: {
               center: { lon:  -73.9065, lat: 40.6564 },
               zoom: 12.85,
